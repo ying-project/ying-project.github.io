@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zhiying Meng Website</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+    <div id="home">
+        <div class="profile_name">
+            Zhiying Meng
+            <div class="contact_info">
+                <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+                zhiyingm@andrew.cmu.edu
+            </div>
+            <div style="clear:both;"></div>
+            <div class="contact_info">
+                <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+                +14128808493
+            </div>
+        </div>
+        <div class="topdiv">
+            <a class="topmenu" href="intro.html">Introduction</a>
+            <a class="topmenu" href="course_projects.html">Course Projects</a>
+            <a class="topmenu" href="self_projects.html">Self Projects</a>
+            <a class="topmenu" href="work.html">Working Experience</a>
+        </div>
+    </div>    
+    </nav>
+            
+    <!-- Skills -->
+    <section id="skills">
+    <h2>Skills</h2>
+    <div style="clear:both;"></div>
+
+    <div class="all_skills">
+        <div class="skill">
+        <img src="html_finalprojimages/html5.png"/>
+        <h6>HTML</h6>
+        <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+        <img src="html_finalprojimages/js.jpeg"/>
+        <h6>JavaScript</h6>
+        <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+    </div>
+    </section>
+        
+    <!-- Projects -->
+    <section class="projects" id="projects">
+    <h2>
+        Projects
+    </h2>
+    <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+        <div class="project-card">
+            <h3>Chatbot</h3>
+            <ul>
+            <li>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+            <h3>Sentiment Analyzer</h3>
+            <ul>
+            <li>Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+            <h3>Fashion Website</h3>
+            <ul>
+            <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using stripe for payment gateway</li>
+            </ul>
+        </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <div class="iconbutton">
+    <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+    </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+    <img src="html_finalprojimages/checkmark--outline.svg"/>
+    <h3><!-- Add appropriate text here--></h3>
+    <button onclick="showPopup(false)">Ok</button>
+    </div>
+</body>
+</html>

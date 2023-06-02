@@ -67,7 +67,7 @@ h2 {
   margin-bottom: 0px;
 }
 
-.introduction {
+.brief {
   text-align: justify;
   font-size: 30px;
   text-align: center;
@@ -86,28 +86,50 @@ h2 {
 
 /* About Me */
 
-.about-me {
+.introduction {
   display: flex;
   align-items: center;
 }
 
-#about-me h1 {
+#introduction h1 {
   font-size: 65px;
   margin-top: 90px;
   color: #7600bc;
 }
 
-#about-me p {
+#introduction p {
   font-size: 25px;
   color: rgb(128, 128, 128);
   margin-top: -1cm;
 }
 
 .profile_image {
-  width: 550px;
+  width: 250px;
   height: fit-content;
   vertical-align: middle;
-  margin: 5px;
+  margin: 10px;
+}
+
+.course {
+  border:1px solid #C0C0C0;
+  border-collapse:collapse;
+  border-spacing:2px;
+  padding:5px;
+}
+.course caption {
+  caption-side:top;
+  text-align:center;
+}
+.course th {
+  border:1px solid #C0C0C0;
+  padding:5px;
+  background:#F0F0F0;
+}
+.course td {
+  border:1px solid #C0C0C0;
+  text-align:center;
+  padding:5px;
+  background:#FFFFFF;
 }
 
 /* Skills */
