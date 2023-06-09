@@ -186,6 +186,10 @@ h2 {
   margin-left: 60px;
 }
 
+.video {
+  margin-top: 15px;
+}
+
 .projects-container hr {
   border: 1px solid lightgray;
   width: 75%;
