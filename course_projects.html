@@ -35,136 +35,132 @@
     <h2>Skills</h2>
     <div style="clear:both;"></div>
 
-    <div class="all_skills">
-        <div class="skill">
-            <a class="skill" href="#FPGA">FPGA & SystemVerilog</a>
-        </div>
-
-        <div class="skill">
-            <a class="skill" href="#Cadence">Cadence Schematic & Layout</a>
-        </div>
-
-        <div class="skill">
-            <a class="skill" href="#Circuit">Circuit Design</a>
-        </div>
-
-        <div class="skill">
-            <a class="skill" href="#Embedded">Embedded Systems & STM32</a>
-        </div>
-
-        <!-- Add more skills here -->
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'FPGA')">FPGA & SystemVerilog</button>
+        <button class="tablinks" onclick="openTab(event, 'Cadence')">Cadence Schematic & Layout</button>
+        <button class="tablinks" onclick="openTab(event, 'Circuit')">Circuit Design</button>
+        <button class="tablinks" onclick="openTab(event, 'Embedded')">Embedded Systems & STM32</button>
     </div>
-    </section>
-        
-    <!-- Projects -->
-    <section class="projects" id="projects">
-    <h2>
-        Course Projects
-    </h2>
-    <div style="clear:both;"></div>
 
+    <!-- Tab content -->
+    <div id="FPGA" class="tabcontent">
         <div id="projects-container" class="projects-container">
-        <div id="FPGA" class="project-card">
-            <h3>"Break Out" Game on FPGA</h3>
-            <ul>
-            <li>Designed the game logic and VGA protocal through RTL datapath and finite state machine.</li>
-            <li>Used SystemVerilog to program on FPGA and display the game on a monitor through VGA.</li>
-            <div class="video">
-                <video width="640" height="360" controls>
-                    <source src="video/BreakOutFPGA.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <div class="project-card">
+                <h3>"Break Out" Game on FPGA</h3>
+                <ul>
+                <li>Designed the game logic and VGA protocal through RTL datapath and finite state machine.</li>
+                <li>Used SystemVerilog to program on FPGA and display the game on a monitor through VGA.</li>
+                <div class="video">
+                    <video width="640" height="360" controls>
+                        <source src="video/BreakOutFPGA.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                </ul>
             </div>
-            </ul>
+            <hr>
+            <div class="project-card">
+                <h3>"RISC240" CPU</h3>
+                <ul>
+                <li>Understood and added functions (a multiplier module) to a CPU structure designed for the course.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>Turing Machine Chip</h3>
+                <ul>
+                <li>Designed, tested, and taped out a chip that performs as a Turing Machine.</li>
+                <li>GitHub Link: <a href="https://github.com/mzy-cmu/tiny-tapeout.git">https://github.com/mzy-cmu/tiny-tapeout.git</a>.</li>
+                </ul>
+            </div>
         </div>
-        <hr>
-        <div class="project-card">
-            <h3>"RISC240" CPU</h3>
-            <ul>
-            <li>Understood and added functions (a multiplier module) to a CPU structure designed for the course.</li>
-            </ul>
+    </div>
+
+    <div id="Cadence" class="tabcontent">
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>Full Adder</h3>
+                <ul>
+                <li>Designed and layed out a 4-bit full adder using Cadence and calculated the propogation delay.</li>
+                <img src="img/adder.png" height="220"/>
+                <img src="img/adder4.png" height="220"/>
+                <img src="img/adder4_layout.png" width="640"/>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>Differential Op Amp</h3>
+                <ul>
+                <li>Drew a differential op amp schematic using Cadence and calculated the open loop gain.</li>
+                <li>Layed out the op amp with minimum gain loss.</li>
+                <img src="img/opamp.png" height="380"/>
+                <img src="img/opamp_layout.jpg" height="380"/>
+                </ul>
+            </div>
         </div>
-        <hr>
-        <div class="project-card">
-            <h3>Turing Machine Chip</h3>
-            <ul>
-            <li>Designed, tested, and taped out a chip that performs as a Turing Machine.</li>
-            <li>GitHub Link: <a href="https://github.com/mzy-cmu/tiny-tapeout.git">https://github.com/mzy-cmu/tiny-tapeout.git</a>.</li>
-            </ul>
+    </div>
+
+    <div id="Circuit" class="tabcontent">
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>RFID Scanner</h3>
+                <ul>
+                <li>Constructed and tuned a scanner coil.</li>
+                <li>Captured the 64-bit Manchester-encoded data for commercial bit tag.</li>
+                <li>Set up LEDs to indicate the RFID status.</li>
+                <img src="img/RFID.png" height="380"/>
+                <img src="img/RFID_LED.jpg" height="380"/>
+                <img src="img/RFID_bit.jpg" height="380"/>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>Wireless Text Messaging</h3>
+                <ul>
+                <li>Designed a 3MHz oscillator to operate a wireless receiver chip to receive a text message.</li>
+                </ul>
+            </div>
         </div>
-        <hr>
-        <div id="Cadence" class="project-card">
-            <h3>Full Adder</h3>
-            <ul>
-            <li>Designed and layed out a 4-bit full adder using Cadence and calculated the propogation delay.</li>
-            <img src="img/adder.png" height="220"/>
-            <img src="img/adder4.png" height="220"/>
-            <img src="img/adder4_layout.png" width="640"/>
-            </ul>
-        </div>
-        <hr>
-        <div class="project-card">
-            <h3>Differential Op Amp</h3>
-            <ul>
-            <li>Drew a differential op amp schematic using Cadence and calculated the open loop gain.</li>
-            <li>Layed out the op amp with minimum gain loss.</li>
-            <img src="img/opamp.png" height="380"/>
-            <img src="img/opamp_layout.jpg" height="380"/>
-            </ul>
-        </div>
-        <hr>
-        <div id="Circuit" class="project-card">
-            <h3>RFID Scanner</h3>
-            <ul>
-            <li>Constructed and tuned a scanner coil.</li>
-            <li>Captured the 64-bit Manchester-encoded data for commercial bit tag.</li>
-            <li>Set up LEDs to indicate the RFID status.</li>
-            <img src="img/RFID.png" height="380"/>
-            <img src="img/RFID_LED.jpg" height="380"/>
-            <img src="img/RFID_bit.jpg" height="380"/>
-            </ul>
-        </div>
-        <hr>
-        <div class="project-card">
-            <h3>Wireless Text Messaging</h3>
-            <ul>
-            <li>Designed a 3MHz oscillator to operate a wireless receiver chip to receive a text message.</li>
-            </ul>
-        </div>
-        <hr>
-        <div id="Embedded" class="project-card">
-            <h3>Trasmission Protocal</h3>
-            <ul>
-            <li>Designed UART transmission protocal and communicate between STM32 and computer.</li>
-            <li>Designed I2C transmission protocal and communicate between STM32 and LCD.</li>
-            <img src="img/LCD.png" height="380"/>
-            </ul>
-        </div>
-        <hr>
-        <div class="project-card">
-            <h3>Scheduling with FreeRTOS</h3>
-            <ul>
-            <li>Used FreeRTOS to schedule various tasks to operate at the same time: UART read and write, read from keypad, print to LCD, control servo, and control everything with AT commands.</li>
-            </ul>
-        </div>
-        <hr>
-        <div class="project-card">
-            <h3>Motor Control with PID</h3>
-            <ul>
-            <li>Controlled a stepper motor with PID values and a specified target.</li>
-            </ul>
-        </div>
-        <hr>
-        <div class="project-card">
-            <h3>PCB Board Design</h3>
-            <ul>
-            <li>Designed a PCB to control all peripherals.</li>
-            <img src="img/PCB_layout.png" height="380"/>
-            <img src="img/PCB.png" height="380"/>
-            </ul>
+    </div>
+
+    <div id="Embedded" class="tabcontent">
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>Trasmission Protocal</h3>
+                <ul>
+                <li>Designed UART transmission protocal and communicate between STM32 and computer.</li>
+                <li>Designed I2C transmission protocal and communicate between STM32 and LCD.</li>
+                <img src="img/LCD.png" height="380"/>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>Scheduling with FreeRTOS</h3>
+                <ul>
+                <li>Used FreeRTOS to schedule various tasks to operate at the same time: UART read and write, read from keypad, print to LCD, control servo, and control everything with AT commands.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>Motor Control with PID</h3>
+                <ul>
+                <li>Controlled a stepper motor with PID values and a specified target.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>PCB Board Design</h3>
+                <ul>
+                <li>Designed a PCB to control all peripherals.</li>
+                <img src="img/PCB_layout.png" height="380"/>
+                <img src="img/PCB.png" height="380"/>
+                </ul>
+            </div>
         </div>
     </div>
     </section>
+    
     <div style="clear:both;"></div>
 
     <div class="iconbutton">
