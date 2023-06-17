@@ -10,26 +10,69 @@
     <nav>
     <div id="home">
         <div class="profile_name">
-            Zhiying Meng
+            Zhiying Meng (Ying)
             <div class="contact_info">
-                <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+                <img src="img/email.png" alt="email"/>
                 zhiyingm@andrew.cmu.edu
             </div>
             <div style="clear:both;"></div>
             <div class="contact_info">
-                <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+                <img src="img/phone.png" alt="phone"/>
                 +14128808493
             </div>
         </div>
         <div class="topdiv">
             <a class="topmenu" href="intro.html">Introduction</a>
-            <a class="topmenu" href="course_projects.html">Course Projects</a>
+            <a class="topmenu" href="course_projects.html" style="font-weight: bolder">Course Projects</a>
             <a class="topmenu" href="self_projects.html">Self Projects</a>
-            <a class="topmenu" href="work.html">Working Experience</a>
+            <a class="topmenu" href="work.html">Work Experience</a>
         </div>
     </div>    
     </nav>
-            
+
+    <div id="content">
+
+    <!-- CMU Courses Table -->
+    <section id="cmu-course">
+    <h2>CMU Courses</h2><br>
+    <table class="course">
+        <thead>
+        <tr>
+            <th>Department</th>
+            <th>Courses</th>
+            <th>Grade</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>ECE Core</td>
+            <td>Intro to ECE<br>Structure and Design of Digital Systems<br>Electronic Devices and Analog Circuits<br>Computer Systems<br>Signals and Systems</td>
+            <td>A<br></td>
+        </tr>
+        <tr>
+            <td>ECE Advanced</td>
+            <td>Microelectronic Circuits<br>Embedded Systems<br>Semiconductor Device</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>ToDo</td>
+            <td>Logic Design and Verification<br>Digital Integrated Circuit Design<br>Analog Integrated Circuits</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Mini Course<br></td>
+            <td>FPGA &amp; ASIC Design<br>PCB Fab<br>Amateur Radio<br></td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>CS</td>
+            <td>Imperative Programming<br>Functional Programming</td>
+            <td>A</td>
+        </tr>
+        <tbody>
+    </table>
+    </section>
+    
     <!-- Skills -->
     <section id="skills">
     <h2>Skills</h2>
@@ -37,10 +80,10 @@
 
     <!-- Tab links -->
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'FPGA')">FPGA & SystemVerilog</button>
-        <button class="tablinks" onclick="openTab(event, 'Cadence')">Cadence Schematic & Layout</button>
+        <button class="tablinks" onclick="openTab(event, 'FPGA')">FPGA<br>SystemVerilog</button>
+        <button class="tablinks" onclick="openTab(event, 'Cadence')">Cadence<br>Schematic & Layout</button>
         <button class="tablinks" onclick="openTab(event, 'Circuit')">Circuit Design</button>
-        <button class="tablinks" onclick="openTab(event, 'Embedded')">Embedded Systems & STM32</button>
+        <button class="tablinks" onclick="openTab(event, 'Embedded')">Embedded Systems<br>STM32</button>
     </div>
 
     <!-- Tab content -->
@@ -51,7 +94,7 @@
                 <ul>
                 <li>Designed the game logic and VGA protocal through RTL datapath and finite state machine.</li>
                 <li>Used SystemVerilog to program on FPGA and display the game on a monitor through VGA.</li>
-                <div class="video">
+                <div class="media">
                     <video width="640" height="360" controls>
                         <source src="video/BreakOutFPGA.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -83,9 +126,11 @@
                 <h3>Full Adder</h3>
                 <ul>
                 <li>Designed and layed out a 4-bit full adder using Cadence and calculated the propogation delay.</li>
-                <img src="img/adder.png" height="220"/>
-                <img src="img/adder4.png" height="220"/>
-                <img src="img/adder4_layout.png" width="640"/>
+                <div class="media">
+                    <img src="img/adder.png" height="220"/>
+                    <img src="img/adder4.png" height="220"/>
+                    <img src="img/adder4_layout.png" width="640"/>
+                </div>
                 </ul>
             </div>
             <hr>
@@ -94,8 +139,10 @@
                 <ul>
                 <li>Drew a differential op amp schematic using Cadence and calculated the open loop gain.</li>
                 <li>Layed out the op amp with minimum gain loss.</li>
-                <img src="img/opamp.png" height="380"/>
-                <img src="img/opamp_layout.jpg" height="380"/>
+                <div class="media">
+                    <img src="img/opamp.png" height="380"/>
+                    <img src="img/opamp_layout.jpg" height="380"/>
+                </div>
                 </ul>
             </div>
         </div>
@@ -109,9 +156,11 @@
                 <li>Constructed and tuned a scanner coil.</li>
                 <li>Captured the 64-bit Manchester-encoded data for commercial bit tag.</li>
                 <li>Set up LEDs to indicate the RFID status.</li>
-                <img src="img/RFID.png" height="380"/>
-                <img src="img/RFID_LED.jpg" height="380"/>
-                <img src="img/RFID_bit.jpg" height="380"/>
+                <div class="media">
+                    <img src="img/RFID.png" height="380"/>
+                    <img src="img/RFID_LED.jpg" height="380"/>
+                    <img src="img/RFID_bit.jpg" height="380"/>
+                </div>
                 </ul>
             </div>
             <hr>
@@ -131,7 +180,9 @@
                 <ul>
                 <li>Designed UART transmission protocal and communicate between STM32 and computer.</li>
                 <li>Designed I2C transmission protocal and communicate between STM32 and LCD.</li>
-                <img src="img/LCD.png" height="380"/>
+                <div class="media">
+                    <img src="img/LCD.png" height="380"/>
+                </div>
                 </ul>
             </div>
             <hr>
@@ -153,8 +204,10 @@
                 <h3>PCB Board Design</h3>
                 <ul>
                 <li>Designed a PCB to control all peripherals.</li>
-                <img src="img/PCB_layout.png" height="380"/>
-                <img src="img/PCB.png" height="380"/>
+                <div class="media">
+                    <img src="img/PCB_layout.png" height="380"/>
+                    <img src="img/PCB.png" height="380"/>
+                </div>
                 </ul>
             </div>
         </div>
@@ -163,16 +216,6 @@
     
     <div style="clear:both;"></div>
 
-    <div class="iconbutton">
-    <a href="#home">
-        <!--Add the code here for the logo to appear and the icon to be actionable-->
-    </a>
-    </div>
-
-    <div class="popup" id="popup" class="flex_center">
-    <img src="html_finalprojimages/checkmark--outline.svg"/>
-    <h3><!-- Add appropriate text here--></h3>
-    <button onclick="showPopup(false)">Ok</button>
     </div>
 </body>
 </html>
