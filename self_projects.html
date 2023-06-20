@@ -24,57 +24,53 @@
         <div class="topdiv">
             <a class="topmenu" href="intro.html">Introduction</a>
             <a class="topmenu" href="course_projects.html">Course Projects</a>
-            <a class="topmenu" href="self_projects.html">Self Projects</a>
-            <a class="topmenu" href="work.html">Working Experience</a>
+            <a class="topmenu" href="self_projects.html" style="font-weight: bolder">Self Projects</a>
+            <a class="topmenu" href="work.html">Work Experience</a>
         </div>
     </div>    
     </nav>
+
+    <div id="content">
         
     <!-- Projects -->
     <section class="projects" id="projects">
-    <h2>
-        Projects
-    </h2>
+    <h2>Projects</h2>
     <div style="clear:both;"></div>
 
         <div id="projects-container" class="projects-container">
         <div class="project-card">
             <h3>Brain Watch</h3>
             <ul>
-            <li>CMU hardware hackathon (Build18) project</li>
             <li>Built a wearable device that displays the user's attention level and provides corresponding feedback, such that if the user is not focused it will vibrate to alarm them.</li>
-            <li>Used bluetooth technique and UART protocol to transfer data.</li>
+            <li>Used bluetooth and UART to transfer data.</li>
+            </ul>
+        </div>
+        <hr>
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>FPGA DSP Module</h3>
+                <ul>
+                <li>Programmed and tested a DSP module in SystemVerilog, and synthesized on a FPGA.</li>
+                <li>The module includes: FIR filter, IIR filter, etc. GitHub Link: <a href="https://github.com/ying-project/fpga-dsp.git">https://github.com/ying-project/fpga-dsp.git</a>.</li>
+                </ul>
+            </div>
+            <div class="project-card">
+            <h3>Remote Control Lego Car</h3>
+            <ul>
+            <li>Designed a remote controller PCB with a motor and a servo to move a Lego car forward, backward, left, and right.</li>
             </ul>
         </div>
         <hr>
         <div class="project-card">
-            <h3>Control Mouse by Hand Gesture</h3>
+            <h3>Personal Website</h3>
             <ul>
-            <li>Developed an app that allows users to control the mouse on a screen through special hand gestures.</li>
-            <li>Won the Technology Track Award as team leader.</li>
-            </ul>
-        </div>
-        <hr>
-        <div class="project-card">
-            <h3>Fashion Website</h3>
-            <ul>
-            <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using stripe for payment gateway</li>
+            <li>Self-studied HTML, CSS, JS, and built this website.</li>
             </ul>
         </div>
     </div>
     </section>
     <div style="clear:both;"></div>
 
-    <div class="iconbutton">
-    <a href="#home">
-        <!--Add the code here for the logo to appear and the icon to be actionable-->
-    </a>
-    </div>
-
-    <div class="popup" id="popup" class="flex_center">
-    <img src="html_finalprojimages/checkmark--outline.svg"/>
-    <h3><!-- Add appropriate text here--></h3>
-    <button onclick="showPopup(false)">Ok</button>
     </div>
 </body>
 </html>
