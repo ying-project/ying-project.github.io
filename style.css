@@ -1,5 +1,5 @@
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Navigation Bar */
@@ -107,13 +107,23 @@ h2 {
   margin-bottom: 0px;
 }
 
+h3 {
+  text-align: justify;
+  font-size: 20px;
+  color: #000000;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-weight: normal;
+}
+
 .course {
   border-collapse:collapse;
   border-spacing:5px;
   padding:10px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -1cm;
+  margin-bottom: 30px;
 }
 
 .course th {
@@ -160,7 +170,7 @@ h2 {
   text-align: center;
   display: block;
   border-radius: 6px;
-  margin: 50px;
+  margin: 30px 50px 10px 50px;
   padding: 10px;
   font-size: 20px;
 }
@@ -195,6 +205,7 @@ h2 {
 
 .media {
   margin-top: 15px;
+  margin-left: 10px;
 }
 
 .projects-container hr {
@@ -203,7 +214,7 @@ h2 {
 }
 
 .project-card {
-  margin: 0 15px 15px 30px;
+  margin: 0 15px 10px 30px;
   padding-bottom: 5px;
 }
 
