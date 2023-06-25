@@ -1,3 +1,10 @@
+html, body {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100vw;
+  width: calc(var(--vw, 1vw) * 100);
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -6,42 +13,19 @@ body {
 
 #home {
   background-color: rgb(204, 224, 254);
-  margin-left:-1cm;
-  margin-right:-0.5cm;
-  margin-top:-1cm;
-  padding-top: 1.5cm;
-  padding-bottom: 2cm;
-  height: 5mm;
- }
-
-.topdiv {
-  float: right;
-  padding-right: 1cm;
-  padding-top: 0.5cm;
-  align-items: center;
-}
-
-.topmenu {
-  color: rgb(0, 0, 0);
-  margin: 10px;
-  padding: 20px;
-  font-size: 20px;
-  text-decoration:none;
-}
-
-.topmenu:hover {
-  text-decoration: underline;
-  /* Add the styles here */
+  margin-left:calc(var(--vw, 1vw) * -1);
+  margin-right:calc(var(--vw, 1vw) * -1);
+  margin-top:-10px; /* some misalign */
+  height: 120px;
 }
 
 .profile_name {
   color: rgb(0, 0, 0);
   float: left;
   font-size: 20px;
-  padding-left: 2cm;
-  align-items: center;
-  vertical-align: middle;
-  /* Add the styles here */
+  padding-left: 3vw;
+  padding-left: calc(var(--vw, 1vw) * 3);
+  padding-top: 30px;
 }
 
 .profile_name .contact_info {
@@ -49,7 +33,6 @@ body {
   font-size: 15px;
   font-style: italic;
   display: flex;
-  align-items: center;
   flex-direction: row;
 }
 
@@ -59,9 +42,27 @@ body {
   float:left;
 }
 
+.topdiv {
+  float: right;
+  padding-right: calc(var(--vw, 1vw) * 3);
+  padding-top: 45px;
+}
+
+.topmenu {
+  color: rgb(0, 0, 0);
+  margin: calc(var(--vw, 1vw) * 2);
+  font-size: 20px;
+  text-decoration:none;
+}
+
+.topmenu:hover {
+  text-decoration: underline;
+  /* Add the styles here */
+}
+
 #content {
   background-color:  rgb(255, 255, 255);
-  padding-left: 1cm;
+  padding-left: calc(var(--vw, 1vw) * 3);
 }
 
 /* Used in the About Me sections */
@@ -79,21 +80,19 @@ body {
 
 #introduction h1 {
   font-size: 40px;
-  margin-top: 90px;
+  margin-top: calc(var(--vh, 1vh) * 10);
   color: rgb(0, 0, 0);
 }
 
 #introduction p {
   font-size: 25px;
   color: rgb(0, 0, 0);
-  margin-top: 10px;
 }
 
 .profile_image {
   width: 250px;
-  height: fit-content;
-  vertical-align: middle;
   margin: 10px;
+  float: right;
 }
 
 /* Course */
