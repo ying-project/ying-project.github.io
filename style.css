@@ -14,44 +14,44 @@ body {
 #home {
   background-color: rgb(204, 224, 254);
   margin-left:calc(var(--vw, 1vw) * -1);
-  margin-right:calc(var(--vw, 1vw) * -1);
+  margin-right:calc(var(--vw, 1vw) * -0);
   margin-top:-10px; /* some misalign */
-  height: 120px;
+  height: calc(var(--vw, 1vw) * 8);
 }
 
 .profile_name {
   color: rgb(0, 0, 0);
   float: left;
-  font-size: 20px;
+  font-size: calc(var(--vw, 1vw) * 1.5);
   padding-left: 3vw;
   padding-left: calc(var(--vw, 1vw) * 3);
-  padding-top: 30px;
+  padding-top: calc(var(--vw, 1vw) * 2);
 }
 
 .profile_name .contact_info {
   color: rgb(0, 0, 0);
-  font-size: 15px;
+  font-size: calc(var(--vw, 1vw) * 1);
   font-style: italic;
   display: flex;
   flex-direction: row;
 }
 
 .contact_info img {
-  width:20px;
-  margin-right: 5px;
+  width: calc(var(--vw, 1vw) * 1);
+  margin-right: calc(var(--vw, 1vw) * 0.3);
   float:left;
 }
 
 .topdiv {
   float: right;
   padding-right: calc(var(--vw, 1vw) * 3);
-  padding-top: 45px;
+  padding-top: calc(var(--vw, 1vw) * 3);
 }
 
 .topmenu {
   color: rgb(0, 0, 0);
   margin: calc(var(--vw, 1vw) * 2);
-  font-size: 20px;
+  font-size: calc(var(--vw, 1vw) * 1.5);
   text-decoration:none;
 }
 
@@ -79,19 +79,19 @@ body {
 }
 
 #introduction h1 {
-  font-size: 40px;
+  font-size: calc(var(--vw, 1vw) * 3);
   margin-top: calc(var(--vh, 1vh) * 10);
   color: rgb(0, 0, 0);
 }
 
 #introduction p {
-  font-size: 25px;
+  font-size: calc(var(--vw, 1vw) * 1.8);
   color: rgb(0, 0, 0);
 }
 
 .profile_image {
-  width: 250px;
-  margin: 10px;
+  width: calc(var(--vw, 1vw) * 20);
+  margin: calc(var(--vw, 1vw) * 1);
   float: right;
 }
 
